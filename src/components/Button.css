@@ -1,0 +1,27 @@
+:root {
+    --primary: #1888ff;
+    --purple: #5900ff;
+    border-radius: 4px;
+    --whitehov: #f8f8f8;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+    background-color: var(--purple);
+    margin-left: 5px;
+}
+
+.btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: rgb(119, 0, 255);
+    border-radius: 4px;
+    border: 2px solid var(--whitehov);
+}

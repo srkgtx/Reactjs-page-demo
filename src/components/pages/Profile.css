@@ -1,0 +1,214 @@
+#Profile .member {
+    margin: 25px 15px;
+    border-radius: 15px;
+    width: 450px;
+    padding: 40px 0;
+    height: max-content;
+    background-color: #fff;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+#Profile h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #242424;
+    display: flex;
+    width: auto;
+}
+
+#Profile p {
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    color: rgb(92, 92, 92);
+    align-items: center;
+}
+
+#Profile img {
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#Profile .description h1 {
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
+
+#Profile .description h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #854dec;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#Profile .description p {
+    color: rgba(8, 61, 119);
+    text-align: justify;
+    padding: 0 15px;
+}
+
+#Profile .description .social-media svg {
+    font-size: 30px;
+    transition: all 1s;
+}
+
+#Profile .member:hover .social-media {
+    width: 100%;
+    opacity: 1;
+}
+
+#Profile .member:hover {
+    background-color: rgba(8, 61, 119, 0.2);
+    transform: scale(1.01);
+}
+
+#Profile .member:hover img {
+    transform: scale(1.1);
+    border: 2px solid rgba(8, 61, 119);
+}
+
+#Profile .description .social-media svg:hover {
+    transform: scale(1.1);
+    color: #854dec;
+}
+
+#Profile .member:hover::before {
+    width: 50%;
+}
+
+#Profile .member:hover::after {
+    width: 50%;
+}
+
+img {
+    max-width: 30%;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+#Profile .members1 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+#Profile .members2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+#Profile .members3 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+#Profile .social-media {
+    background-color: rgba(255, 255, 255, );
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-around;
+    transition: all 1s;
+    border-radius: 0 0 15px 15px;
+    color: rgb(156, 156, 156);
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    #Profile .member {
+        margin: 20px 15px;
+        border-radius: 15px;
+        width: 300px;
+        padding: 30px 0;
+        height: max-content;
+        background-color: #fff;
+        transition: all 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        justify-items: stretch;
+    }
+
+    #Profile h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        color: #242424;
+        display: flex;
+        width: auto;
+    }
+
+    #Profile p {
+        font-size: smaller;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 15px;
+        color: rgb(92, 92, 92);
+        align-items: center;
+    }
+
+    #Profile img {
+        border-radius: 50%;
+        transition: all 1s;
+    }
+
+    #Profile .description h1 {
+        color: rgb(68, 68, 68);
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #Profile .description h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #854dec;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    #Profile .social-media {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-around;
+        transition: all 1s;
+        border-radius: 0 0 15px 15px;
+        color: #fff;
+    }
+    
+    #Profile .member:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.01);
+    }
+    
+    #Profile .member:hover img {
+        transform: scale(1.1);
+        border: 2px solid rgb(255, 255, 255,);
+    }
+    #Profile .description .social-media svg:hover {
+        transform: scale(1.1);
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,189 @@
+#Home .member {
+    margin: 20px 15px;
+    border-radius: 15px;
+    width: 400px;
+    padding: 40px 0;
+    height: max-content;
+    background-color: #fff;
+    transition: all 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Home p {
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+#Home img {
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#Home .description h1 {
+    color: rgb(68, 68, 68);
+    text-align: center;
+    font-size: 16px;
+}
+
+#Home .description h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #854dec;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#Home .description p {
+    color: rgba(8, 61, 119);
+    text-align: justify;
+    padding: 0 15px;
+}
+
+#Home .description svg {
+    font-size: 30px;
+    transition: all 1s;
+}
+
+#Home .member:hover {
+    width: 100%;
+    opacity: 1;
+}
+
+#Home .member:hover {
+    background-color: rgba(8, 61, 119, 0.2);
+    transform: scale(1.01);
+}
+
+#Home .member:hover img {
+    transform: scale(1.1);
+    border: 2px solid rgba(8, 61, 119);
+}
+
+#Home .description svg:hover {
+    transform: scale(1.1);
+    color: #F21B3F;
+}
+
+#Home .member:hover::before {
+    width: 50%;
+}
+
+#Home .member:hover::after {
+    width: 50%;
+}
+
+img {
+    display: flex;
+    max-width: 30%;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+#Home .members1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+#Home .members2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+#Home .members3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.title1 {
+    margin: auto;
+    text-align: start;
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 960px) {
+    #Profile .member {
+        margin: 20px 15px;
+        border-radius: 15px;
+        width: 100%;
+        padding: 30px 0;
+        height: max-content;
+        background-color: #fff;
+        transition: all 1s;
+        display: block;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        justify-items: stretch;
+    }
+
+    #Profile h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        color: #242424;
+        width: auto;
+    }
+
+    #Profile p {
+        font-size: smaller;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 15px;
+        color: rgb(92, 92, 92);
+        align-items: center;
+    }
+
+    #Profile img {
+        border-radius: 50%;
+        transition: all 1s;
+    }
+
+    #Profile .description h1 {
+        color: rgb(68, 68, 68);
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #Profile .description h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #854dec;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    #Profile .member:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: scale(1.01);
+    }
+
+    #Profile .member:hover img {
+        transform: scale(1.1);
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
